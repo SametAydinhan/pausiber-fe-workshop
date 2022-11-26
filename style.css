@@ -17,7 +17,7 @@ a {
   color: inherit;
 }
 nav {
-  height: 70px;
+  height: 90px;
   width: 100%;
   background-color: #000;
   color: white;
@@ -27,7 +27,8 @@ nav {
   padding: 0 20px;
 }
 main {
-  height: calc(100% - 70px);
+  height: calc(100% - 90px);
+  width: 100%;
 }
 .logo-container {
   font-size: 36px;
