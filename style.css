@@ -36,6 +36,9 @@ nav {
  .logo-container:hover{
     color: #40C4FF;
  }
+ .logo-container i{
+    padding-right: 9px;
+ }
 
 
 
@@ -50,10 +53,12 @@ nav {
   margin-right: 20px;
   color: #fff;
   text-transform: capitalize;
-  transition: 0.3;
+  transition: 0.3 all ease-in-out;
+  border: none;
 }
 .nav-container ul .nav-link:hover{
    color: #40C4FF;
+   border-bottom: 1px solid #40C4FF;
 }
 .nav-container ul .nav-link:last-child {
   margin-right: 0;
@@ -117,6 +122,7 @@ main .main-container .main-infos-content .button-content button{
 }
 main .main-container .main-infos-content .button-content button:hover{
     box-shadow: -4px -4px -0px -0px #0091EA;
+    animation: shake .3s linear;
 }
 
 main .main-container .main-image{
@@ -135,3 +141,67 @@ main .main-container .main-image img{
 main .main-container .main-image img:hover{
     box-shadow: -6px -6px 0px 0px #0091EA;
 }
+
+.social-container{
+    position: absolute;
+    right: 45px;
+    top: 40%;
+
+}
+
+.social-container a .social-item{
+    font-size: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9px;
+    transition: .3s all ease-in-out;
+    color:#0091EA;
+}
+
+.social-container a .social-item.instagram:hover{
+    background-color: #e4405f;
+    color: white;
+    transform: scale(1.2);
+}
+
+.social-container a .social-item.twitter:hover{
+    background-color: #1da1f2;
+    color: white;
+    transform: scale(1.2);
+}
+
+.social-container a .social-item.github:hover{
+    background-color: #171515;
+    color: white;
+    transform: scale(1.2);
+}
+
+.social-container a .social-item.linkedin:hover{
+    background-color: #0a66c2;
+    color: white;
+    transform: scale(1.2);
+}
+
+@keyframes shake{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
