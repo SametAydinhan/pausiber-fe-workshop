@@ -10,6 +10,11 @@
 body {
   width: 100vw;
   height: 100vh;
+  background-image: url(image/wp7453676-portfolio-wallpapers.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 a {
@@ -19,7 +24,7 @@ a {
 nav {
   height: 90px;
   width: 100%;
-  background-color: #000;
+  border-bottom: 3px solid white;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -34,13 +39,11 @@ nav {
   cursor: pointer;
 }
  .logo-container:hover{
-    color: #40C4FF;
+    color: #F4B53A;
  }
  .logo-container i{
     padding-right: 9px;
  }
-
-
 
 .nav-container ul {
   display: flex;
@@ -57,8 +60,9 @@ nav {
   border: none;
 }
 .nav-container ul .nav-link:hover{
-   color: #40C4FF;
-   border-bottom: 1px solid #40C4FF;
+   color: #F4B53A;
+   border-bottom: 1px solid #F4B53A;
+   transform: scale(1.2);
 }
 .nav-container ul .nav-link:last-child {
   margin-right: 0;
@@ -68,7 +72,7 @@ main {
     height: calc(100% - 90px);
     width: 100%;
     padding: 75px 150px 75px 30px;
-    background-color: #40C4FF;
+    
   }
 
 main .main-container{
@@ -94,10 +98,11 @@ main .main-container .main-infos-content .text-content h2{
     margin-bottom: 12px;
     font-size: 36px;
     font-weight: 700;
+    color: white;
 }
 
 main .main-container .main-infos-content .text-content span{
-    color: #474a57;
+    color:#171515;
     font-size: 28px;
     font-weight: 500;
     letter-spacing: -1px;
@@ -117,36 +122,27 @@ main .main-container .main-infos-content .button-content button{
     font-weight: 700;
     font-size: 24px;
     cursor: pointer;
-    box-shadow: 4px 4px 0px 0px #0091EA;
+    box-shadow: 4px 4px 0px 0px #F4B53A;
     transition: .3s all ease-in-out;
 }
 main .main-container .main-infos-content .button-content button:hover{
-    box-shadow: -4px -4px -0px -0px #0091EA;
     animation: shake .3s linear;
 }
 
 main .main-container .main-image{
     width: 500px;
     height: 100%;
-  
 }
 main .main-container .main-image img{
     width: 500px;
     height: 100%;
     border-radius: 25px;
-    box-shadow: 6px 6px 0px 0px #0091EA;
-    transition: .3s all ease-in-out;
-    cursor: pointer;
 }
-main .main-container .main-image img:hover{
-    box-shadow: -6px -6px 0px 0px #0091EA;
-}
-
 .social-container{
     position: absolute;
-    right: 45px;
-    top: 40%;
-
+    top: 37%;
+    right: 20px;
+    
 }
 
 .social-container a .social-item{
@@ -160,7 +156,7 @@ main .main-container .main-image img:hover{
     align-items: center;
     margin-bottom: 9px;
     transition: .3s all ease-in-out;
-    color:#0091EA;
+    color:black;
 }
 
 .social-container a .social-item.instagram:hover{
