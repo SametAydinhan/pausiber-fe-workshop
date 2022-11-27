@@ -128,6 +128,7 @@ main .main-container .main-infos-content .button-content button{
 }
 main .main-container .main-infos-content .button-content button:hover{
     animation: shake .3s linear;
+    box-shadow: -4px -4px 0px 0px #F4B53A;
 }
 
 main .main-container .main-image{
@@ -211,3 +212,8 @@ footer{
     margin-top: -25px;
     opacity: 0.4;
 }
+
+/* @media screen (max-width: 1200) {
+    
+}
+     */
