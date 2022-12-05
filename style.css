@@ -136,6 +136,9 @@ main .main-container .main-image{
     height: 100%;
 }
 main .main-container .main-image img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 500px;
     height: 100%;
     border-radius: 25px;
@@ -213,7 +216,28 @@ footer{
     opacity: 0.4;
 }
 
-/* @media screen (max-width: 1200) {
-    
+ @media(max-width: 1200px) {
+    body    {
+        overflow: scroll;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-infos-content{
+        margin-top: 121px;
+    }
+    .main-image{
+        margin-top: 25px;
+    }
+    footer{
+        margin-top: -25px;
+    }
+    .social-container{
+        top: 37%;
+        right: 5%;
+    }
+
+
 }
-     */
+    
